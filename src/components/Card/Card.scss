@@ -1,0 +1,40 @@
+.card {
+    border: 1px solid black;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    width: 100%;
+    transition: 0.5s;
+
+    backdrop-filter: blur(10px);
+
+    box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.8);
+    color: white    ;
+
+    &:hover {
+        scale: 1.05;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.8);
+    }
+
+
+    img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: lightcoral;
+        cursor: pointer;
+        border: none;
+        border-radius: 20px;
+    }
+}
